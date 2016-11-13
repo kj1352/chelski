@@ -1,0 +1,34 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Chelski FC</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    </head>
+        <body>
+    <header>
+        <h1>Chelsea Fan Club</h1>
+        <div id="naruto">
+            <section class="head"></section>
+            <section class="torso"></section>
+            <section class="legs"></section>
+            <section class="shadow"></section>
+        </div>
+    </header>
+    <nav><aside>Home</aside><aside>Matches</aside><aside>Live</aside><aside>Login</aside></nav>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+     
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function (){
+    
+    })
+
+</script>
+</html>

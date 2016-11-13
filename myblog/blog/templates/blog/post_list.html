@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <article>
+            <ptitle>{{ post.title }}</ptitle>
+            <p>{{ post.text|linebreaksbr }}</p>
+            <time>
+                <section>Published on</section>
+                <section>{{ post.published_date }}</section>
+            </time>
+            
+        </article>
+    {% endfor %}
+{% endblock %}
